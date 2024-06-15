@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+}
+
+/* Quiz container styles */
+.quiz-container {
+  max-width: 800px;
+  margin: 8% auto;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Header styles */
+.quiz-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Question container styles */
+.question-container {
+  padding: 1rem;
+  border-radius: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-container h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.question-container .ques {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Answer list styles */
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ol li {
+  margin-bottom: 1rem;
+}
+
+ol li button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+ol li button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Timer styles */
+.timer {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Skip button styles */
+.skip {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.skip:hover {
+  background: #555;
+  color: #fff;
+}
+
+/* Result container styles */
+.result-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+  z-index: 100;
+  background-image: linear-gradient(to right, #d9a7c7, #fffcdc, #a9ddd6);
+  color: #333;
+}
+
+/* Loader styles */
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
